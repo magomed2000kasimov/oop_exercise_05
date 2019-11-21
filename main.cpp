@@ -13,7 +13,8 @@ void menu() {
 }
 
 void usingStack() {
-    int command, minicommand, val, index;
+    int command, minicommand, index;
+    double val;
     cntr::Stack<pentagon<double>> st;
     for (;;) {
         std::cin >> command;
