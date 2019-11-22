@@ -1,3 +1,0 @@
-M:/22/oop_exercise_05/cmake-build-debug/CMakeFiles/oop_exercise_05.dir
-M:/22/oop_exercise_05/cmake-build-debug/CMakeFiles/edit_cache.dir
-M:/22/oop_exercise_05/cmake-build-debug/CMakeFiles/rebuild_cache.dir
