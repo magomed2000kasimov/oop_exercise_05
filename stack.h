@@ -50,6 +50,8 @@ namespace cntr {
         void Pop();
 
         void Push(const T &value);
+	
+	Stack() = default; 
 
         size_t Size = 0;
     private:
@@ -65,6 +67,8 @@ namespace cntr {
         std::unique_ptr<StackNode> Head = nullptr;
         Stack(const Stack&);
         Stack& operator=(const Stack&);
+
+
     };
 
 
