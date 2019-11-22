@@ -1,0 +1,6 @@
+# ninja log v5
+0	2840	1574402775	oop_exercise_05_meson@exe/main.cpp.o	3b2e036eb938a723
+2850	3065	1574402776	oop_exercise_05_meson	bf19e15d105f1788
+0	792	1574403275	build.ninja	6e8d05f05298dd3a
+2	196	1574403294	oop_exercise_05_meson	bf19e15d105f1788
+2	202	1574403317	oop_exercise_05_meson	bf19e15d105f1788
