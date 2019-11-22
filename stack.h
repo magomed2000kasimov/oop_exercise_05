@@ -64,7 +64,7 @@ namespace cntr {
         };
         std::unique_ptr<StackNode> Head = nullptr;
         Stack(const Stack&);
-        Stack&operator=(const Stack&);
+        Stack& operator=(const Stack&);
     };
 
 
