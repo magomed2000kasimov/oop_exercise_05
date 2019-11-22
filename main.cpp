@@ -15,8 +15,7 @@ void menu() {
 void usingStack() {
     int command, minicommand, index;
     double val;
-    cntr::Stack<pentagon<double>> st,st2;
-    st = st2;
+    cntr::Stack<pentagon<double>> st;
     for (;;) {
         std::cin >> command;
         if (command == 1) {
@@ -31,11 +30,15 @@ void usingStack() {
                         throw std::logic_error("Out of bounds\n");
                     }
                     pentagon<double> p(std::cin);
+		    if (index == st.Size - 1) {
+			st.Push(p);
+		    } else { 
                     auto it = st.begin();
                     for (int i = 0; i < index; ++i) {
                         ++it;
                     }
                     st.Insert(it, p);
+		    }
                 } catch (std::logic_error &e) {
                     std::cout << e.what() << std::endl;
                     continue;
