@@ -1,10 +1,10 @@
-Build started at 2019-11-22T15:12:03.792677
+Build started at 2019-11-22T18:01:55.356743
 Main binary: /usr/bin/python3
 Python system: Linux
 The Meson build system
 Version: 0.45.1
-Source dir: /home/magomed/opit/oop_exercise_05
-Build dir: /home/magomed/opit/oop_exercise_05/build2
+Source dir: /home/magomed/22.11.2019/oop_exercise_05
+Build dir: /home/magomed/22.11.2019/oop_exercise_05/build2
 Build type: native build
 Project name: oop_exrcise_05
 Native C++ compiler: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
