@@ -26,11 +26,11 @@ void usingStack() {
             } else if (minicommand == 2) {
                 std::cin >> index;
                 try {
-                    if (index < 0 || index >= st.Size) {
+                    if (index < 0 || index > st.Size) {
                         throw std::logic_error("Out of bounds\n");
                     }
                     pentagon<double> p(std::cin);
-		    if (index == st.Size - 1) {
+		    if (index == st.Size) {
 			st.Push(p);
 		    } else { 
                     auto it = st.begin();
