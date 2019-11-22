@@ -43,7 +43,9 @@ namespace cntr {
 
         T& Top();
 
-        void Insert(const ForwardIterator &it, const T &value);
+        void Insert(int& index,const T &value );
+
+        void InsertHelp(const ForwardIterator &it, const T &value);
 
         void Erase(const ForwardIterator &it);
 
@@ -118,8 +120,28 @@ namespace cntr {
         return nullptr;
     }
 
+
     template<class T>
-    void Stack<T>::Insert(const ForwardIterator &it, const T &value) {
+    void Stack<T>::Insert(int &index, const T &value) {
+        int id = index - 1;
+        if (index < 0 || index > this->Size) {
+            throw std::logic_error("Out of bounds\n");
+        }
+        if (id == -1) {
+            this->Push(value);
+        }
+        else {
+            auto it = this->begin();
+            for (int i = 0; i < id; ++i) {
+                ++it;
+            }
+            this->InsertHelp(it,value);
+        }
+    }
+
+
+    template<class T>
+    void Stack<T>::InsertHelp(const ForwardIterator &it, const T &value) {
         std::unique_ptr<StackNode> newNode(new StackNode(value, nullptr));
         if (it.Ptr == nullptr && Size != 0) {
             throw std::logic_error("Out of bounds");

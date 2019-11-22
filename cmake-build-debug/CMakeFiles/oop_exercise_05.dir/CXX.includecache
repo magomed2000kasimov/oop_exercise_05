@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+M:/final/oop_exercise_05/main.cpp
+iostream
+-
+stack.h
+M:/final/oop_exercise_05/stack.h
+pentagon.h
+M:/final/oop_exercise_05/pentagon.h
+algorithm
+-
+
+M:/final/oop_exercise_05/pentagon.h
+point.h
+M:/final/oop_exercise_05/point.h
+
+M:/final/oop_exercise_05/point.h
+iostream
+-
+algorithm
+-
+
+M:/final/oop_exercise_05/stack.h
+iterator
+-
+memory
+-
+

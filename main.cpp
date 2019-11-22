@@ -26,19 +26,9 @@ void usingStack() {
             } else if (minicommand == 2) {
                 std::cin >> index;
                 try {
-                    if (index < 0 || index > st.Size) {
-                        throw std::logic_error("Out of bounds\n");
-                    }
                     pentagon<double> p(std::cin);
-		    if (index == st.Size) {
-			st.Push(p);
-		    } else { 
-                    auto it = st.begin();
-                    for (int i = 0; i < index; ++i) {
-                        ++it;
-                    }
-                    st.Insert(it, p);
-		    }
+                    st.Insert(index,p);
+
                 } catch (std::logic_error &e) {
                     std::cout << e.what() << std::endl;
                     continue;
