@@ -41,7 +41,7 @@ namespace cntr {
 
         ForwardIterator end();
 
-        T Top();
+        T& Top();
 
         void Insert(const ForwardIterator &it, const T &value);
 
@@ -143,7 +143,7 @@ namespace cntr {
     }
 
     template<class T>
-    T Stack<T>::Top() {
+    T& Stack<T>::Top() {
         if (Head.get()) {
             return Head->Value;
         } else {
